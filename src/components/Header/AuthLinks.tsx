@@ -15,7 +15,7 @@ const AuthLinks = () => {
                 <Link className="hidden md:block" href={'/login'}>Login</Link>
             ) : (
                 <>
-                    <Link className="hidden md:block" href={'/write'}>Dashboard</Link>
+                    <Link className="hidden md:block" href={'/'}>Dashboard</Link>
                     <span className="cursor-pointer hidden md:block">Logout</span>
                 </>
             )}
@@ -67,7 +67,7 @@ const AuthLinks = () => {
                                     status === "authenticated" ? (
                                         <>
                                             <Link
-                                                href={'/write'}
+                                                href={'/'}
                                                 className="w-max flex items-center gap-[15px]">
                                                 Dashboard
                                             </Link>
