@@ -33,7 +33,7 @@
   }
 
   .dark {
-    --background: 224 71.4% 4.1%;
+    --background: 229 84% 5%;
     --foreground: 210 20% 98%;
     --card: 224 71.4% 4.1%;
     --card-foreground: 210 20% 98%;
@@ -60,6 +60,17 @@
   }
 }
 
+.difuminado-img {
+  filter: drop-shadow(-40px 40px 100px #06b6d4);
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
 
 @layer base {
   * {
