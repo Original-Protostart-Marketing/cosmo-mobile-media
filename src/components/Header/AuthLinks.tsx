@@ -32,7 +32,7 @@ const AuthLinks = () => {
                                 <Image src={Logo} alt="Logo" width={0} height={0} className='w-[120px]' />
                             </Link>
                             <div className="flex items-center h-full gap-[15px]">
-                                <ToggleButton />
+                                {/* <ToggleButton /> */}
                                 <CircleX className="cursor-pointer text-[24px]" onClick={() => setOpen(!open)} />
                             </div>
                         </div>

@@ -7,26 +7,32 @@ import Link from "next/link"
 import AuthLinks from "./AuthLinks"
 
 const Navbar = () => {
-    const [isScrolledDown, setIsScrolledDown] = useState(false);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    const handleScroll = () => {
+        const currentScrollPos = window.pageYOffset;
+        const isVisible = prevScrollPos > currentScrollPos || currentScrollPos < 2;
+
+        setVisible(isVisible);
+        setPrevScrollPos(currentScrollPos);
+    };
 
     useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY; // Get current scroll position
-            setIsScrolledDown(scrollY > 0); // Update state based on scroll position
-        };
-
         window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [prevScrollPos]);
 
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
     return (
-        <header className={`fixed px-4 top-0 left-0 h-[70px] w-screen z-50 transition duration-300 ease-in-out`}>
-            <section className="w-[100%] max-w-8xl mx-auto flex items-center justify-between h-full z-50">
+        <header className={`fixed px-4 top-0 left-0 h-[70px] w-screen z-50 transition duration-300 ease-in-out ${visible ? 'translate-y-0 bg-slate-950' : '-translate-y-full'}`}>
+            <section className="w-[100%] max-w-7xl mx-auto flex items-center justify-between h-full z-50">
                 <Link href='/'>
                     <Image src={Logo} alt="Logo" width={0} height={0} className='w-[120px]' />
                 </Link>
                 <nav className="flex gap-[20px] items-center xl:text-[18px] xl:gap-[15px] text-white">
-                    <ToggleButton />
+                    {/* <ToggleButton /> */}
                     <Link className="hidden md:flex" href='/'>Home</Link>
                     <Link className="hidden md:flex" href='/'>About</Link>
                     <Link className="hidden md:flex" href='/'>Services</Link>
@@ -36,7 +42,7 @@ const Navbar = () => {
                 </nav>
             </section>
         </header>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
