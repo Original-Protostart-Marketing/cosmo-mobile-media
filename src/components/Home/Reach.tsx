@@ -16,7 +16,7 @@ const Reach = () => {
             <article className='w-full h-full max-w-7xl mx-auto grid grid-cols-1 gap-6'>
                 <section className='flex-1'>
                     <h2 className='bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-4xl tracking-tight text-transparent max-w-2xl mx-auto md:text-5xl lg:text-7xl lg:max-w-3xl'>Take Your Marketing On The Go</h2>
-                    <p className='text-center my-6 max-w-5xl mx-auto md:text-lg lg:text-xl'>Harness the impact of mobile advertising with <span className='text-cyan-500'>CosmoMobileMedia&apos;s</span> state-of-the-art digital billboard trucks. These dynamic mobile billboards, featuring captivating visuals and engaging audio, are designed to grab your audience's attention wherever they are. Don&apos;t settle for ordinary advertising - elevate your campaigns with unparalleled nationwide out-of-home exposure and immersive marketing experiences.</p>
+                    <p className='text-center my-6 max-w-5xl mx-auto md:text-lg lg:text-xl'>Harness the impact of mobile advertising with <span className='text-cyan-500'>CosmoMobileMedia&apos;s</span> state-of-the-art digital billboard trucks. These dynamic mobile billboards, featuring captivating visuals and engaging audio, are designed to grab your audience&apos;s attention wherever they are. Don&apos;t settle for ordinary advertising - elevate your campaigns with unparalleled nationwide out-of-home exposure and immersive marketing experiences.</p>
                 </section>
                 <Swiper
                     loop={true}
