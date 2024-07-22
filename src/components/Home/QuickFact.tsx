@@ -9,7 +9,7 @@ const QuickFact = () => {
                 <section className='flex-1 flex flex-col relative'>
                     <div className="absolute rounded-full bg-gradient-to-br from-cyan-200 -cyan-500 opacity-25 blur-3xl w-[80%] h-[80%] top-0 left-0"></div>
                     <h2 className='bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-4xl tracking-tight text-transparent max-w-2xl md:text-5xl lg:text-7xl lg:max-w-3xl'>Quick Fact</h2>
-                    <p className='my-4 md:text-lg lg:text-3xl'>"Individual vehicle advertising generates between 30,000 to 70,000 daily vehicle impressions."</p>
+                    <p className='my-4 md:text-lg lg:text-3xl'>&quot;Individual vehicle advertising generates between 30,000 to 70,000 daily vehicle impressions.&quot;</p>
                 </section>
                 <Image width={0} height={0} alt='Truck' className='w-full h-full' src={QuickFactImg} />
             </article>

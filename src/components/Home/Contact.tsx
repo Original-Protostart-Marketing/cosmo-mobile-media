@@ -16,7 +16,7 @@ const Contact = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
                     <div className="group relative">
-                        <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-75 blur transition duration-500 group-hover:opacity-100"></div>
+                        <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-cyan-500 opacity-75 blur transition duration-500 group-hover:opacity-100"></div>
                         <button className="relative rounded-lg bg-black px-7 py-4 text-white">Contact us</button>
                     </div>
                 </div>
