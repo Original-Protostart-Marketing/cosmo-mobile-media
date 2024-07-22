@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
-import Map from '../../../public/Map4.png'
+import Map from '../../../public/Map.png'
 
 const Cities = () => {
     return (
         <section className='w-screen py-12 px-4 bg-background'>
             <article className='w-full h-full max-w-7xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 text-center md:text-left'>
-                <Image width={0} height={0} alt='Cities' className='w-full h-full' src={Map} />
+                <Image width={4000} height={4000} alt='Cities' className='w-full h-full' src={Map} />
                 <section className='flex-1 flex flex-col relative'>
                     <div className="absolute rounded-full bg-gradient-to-br from-cyan-200 -cyan-500 opacity-25 blur-3xl w-[80%] h-[80%] top-0 left-0"></div>
                     <h2 className='bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-4xl tracking-tight text-transparent max-w-2xl md:text-5xl lg:text-7xl lg:max-w-3xl'>Areas we serve</h2>
