@@ -26,7 +26,7 @@ const Footer = () => {
                 </article>
                 <article className='flex flex-col items-center sm:items-start'>
                     <h3 className='font-bold mb-1'>CONTACT</h3>
-                    <a className='flex gap-2 text-sm items-center mb-1' href=""><Phone className='w-4 h-4' />+1 (555) 555-5555</a>
+                    <a className='flex gap-2 text-sm items-center mb-1' href=""><Phone className='w-4 h-4' />+1 (281) 401-9303</a>
                     <a className='flex gap-2 text-sm items-center mb-1' href="mailto:contact@cosmomobilemedia.com"><Mail className='w-4 h-4' />contact@cosmomobilemedia.com</a>
                     <a className='flex gap-2 text-sm items-center mb-1' href=""><MapPinned className='w-4 h-4' />123 Main Street, Anytown USA</a>
                 </article>
