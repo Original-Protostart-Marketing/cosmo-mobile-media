@@ -4,7 +4,7 @@ import QuickFactImg from '../../../public/QuickFact.jpeg'
 
 const QuickFact = () => {
     return (
-        <section className='w-screen py-12 px-4 bg-background'>
+        <section className='w-full py-12 px-4 bg-background'>
             <article className='w-full h-full max-w-7xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 text-center md:text-left items-center'>
                 <section className='flex-1 flex flex-col relative'>
                     <div className="absolute rounded-full bg-gradient-to-br from-cyan-200 -cyan-500 opacity-25 blur-3xl w-[80%] h-[80%] top-0 left-0"></div>

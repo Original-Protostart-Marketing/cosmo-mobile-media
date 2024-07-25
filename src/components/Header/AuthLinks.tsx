@@ -44,14 +44,9 @@ const AuthLinks = () => {
                                     Home
                                 </Link>
                                 <Link
-                                    href={'/about'}
+                                    href={'/mobile-advertising'}
                                     className="w-max flex items-center gap-[15px]">
-                                    About
-                                </Link>
-                                <Link
-                                    href={'/services'}
-                                    className="w-max flex items-center gap-[15px]">
-                                    Services
+                                    Mobile Advertising
                                 </Link>
                                 <Link
                                     href={'/contact'}
@@ -67,7 +62,7 @@ const AuthLinks = () => {
                                     status === "authenticated" ? (
                                         <>
                                             <Link
-                                                href={'/'}
+                                                href={'/dashboard'}
                                                 className="w-max flex items-center gap-[15px]">
                                                 Dashboard
                                             </Link>

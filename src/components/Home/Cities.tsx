@@ -4,7 +4,7 @@ import Map from '../../../public/Map.png'
 
 const Cities = () => {
     return (
-        <section className='w-screen py-12 px-4 bg-background'>
+        <section className='w-full py-12 px-4 bg-background'>
             <article className='w-full h-full max-w-7xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 text-center md:text-left'>
                 <Image width={4000} height={4000} alt='Cities' className='w-full h-full' src={Map} />
                 <section className='flex-1 flex flex-col relative'>
