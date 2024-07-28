@@ -6,8 +6,8 @@ import { Facebook, Instagram, Mail, MapPinned, Phone } from 'lucide-react'
 
 const Footer = () => {
     return (
-        <footer className='w-full py-24 px-4 bg-black border-t-2 border-cyan-500'>
-            <section className='w-full h-full max-w-7xl mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center'>
+        <footer className='w-full px-4 bg-black border-t-2 border-cyan-500 flex flex-col'>
+            <section className='w-full h-full py-12 max-w-7xl mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center'>
                 <article className='flex flex-col items-center sm:items-start'>
                     <Image
                         src={Logo}
@@ -37,6 +37,9 @@ const Footer = () => {
                     </div>
                 </article>
             </section>
+            <p className='w-full text-center mt-8 py-4 text-sm'>
+                Copyright ©2024 - Cosmo Mobile Media All rights reserved
+            </p>
         </footer>
     )
 }

@@ -39,21 +39,25 @@ const AuthLinks = () => {
                         <div className="w-[90%] mx-auto h-[calc(100vh-70px)]">
                             <div className="w-full h-full bg-softBg rounded-xl flex flex-col justify-start items-center mt-8  text-[20px] font-semibold gap-[20px]">
                                 <Link
+                                    onClick={() => setOpen(false)}
                                     href={'/'}
                                     className="w-max flex items-center gap-[15px] mt-[20px]">
                                     Home
                                 </Link>
                                 <Link
+                                    onClick={() => setOpen(false)}
                                     href={'/mobile-advertising'}
                                     className="w-max flex items-center gap-[15px]">
                                     Mobile Advertising
                                 </Link>
                                 <Link
+                                    onClick={() => setOpen(false)}
                                     href={'/contact'}
                                     className="w-max flex items-center gap-[15px]">
                                     Contact
                                 </Link>
                                 <Link
+                                    onClick={() => setOpen(false)}
                                     href={'/careers'}
                                     className="w-max flex items-center gap-[15px]">
                                     Careers
@@ -62,6 +66,7 @@ const AuthLinks = () => {
                                     status === "authenticated" ? (
                                         <>
                                             <Link
+                                                onClick={() => setOpen(false)}
                                                 href={'/dashboard'}
                                                 className="w-max flex items-center gap-[15px]">
                                                 Dashboard

@@ -11,7 +11,7 @@ const QuickFact = () => {
                     <h2 className='bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-4xl tracking-tight text-transparent max-w-2xl md:text-5xl lg:text-7xl lg:max-w-3xl'>Quick Fact</h2>
                     <p className='my-4 md:text-lg lg:text-3xl'>&quot;Individual vehicle advertising generates between 30,000 to 70,000 daily vehicle impressions.&quot;</p>
                 </section>
-                <Image width={0} height={0} alt='Truck' className='w-full h-full' src={QuickFactImg} />
+                <Image width={0} height={0} alt='Truck' className='w-full h-full rounded-sm md:rounded-md lg:rounded-xg' src={QuickFactImg} />
             </article>
         </section>
     )
