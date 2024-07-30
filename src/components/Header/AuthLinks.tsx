@@ -11,14 +11,14 @@ const AuthLinks = () => {
     const [open, setOpen] = useState<boolean>(false);
     return (
         <>
-            {status !== "authenticated" ? (
+            {/* {status !== "authenticated" ? (
                 <Link className="hidden md:block" href={'/login'}>Login</Link>
             ) : (
                 <>
                     <Link className="hidden md:block" href={'/'}>Dashboard</Link>
                     <span className="cursor-pointer hidden md:block">Logout</span>
                 </>
-            )}
+            )} */}
             <div className="w-[20px] h-[16px] flex-col justify-between cursor-pointer flex md:hidden" onClick={() => setOpen(!open)}>
                 <div className="w-[100%] h-[2px] bg-foreground"></div>
                 <div className="w-[100%] h-[2px] bg-foreground"></div>
@@ -62,7 +62,7 @@ const AuthLinks = () => {
                                     className="w-max flex items-center gap-[15px]">
                                     Careers
                                 </Link>
-                                {
+                                {/* {
                                     status === "authenticated" ? (
                                         <>
                                             <Link
@@ -80,7 +80,7 @@ const AuthLinks = () => {
                                             Login
                                         </button>
                                     )
-                                }
+                                } */}
                             </div>
                         </div>
                     </div>

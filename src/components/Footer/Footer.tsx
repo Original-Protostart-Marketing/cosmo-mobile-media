@@ -32,8 +32,8 @@ const Footer = () => {
                 <article className='flex flex-col items-center sm:items-start'>
                     <h3 className='font-bold mb-1'>SOCIAL</h3>
                     <div className='flex flex-row sm:flex-col gap-2'>
-                        <a href="https://www.facebook.com/CosmoMobileMedia"><Instagram /></a>
-                        <a href="https://www.instagram.com/cosmomobilemedia/"><Facebook /></a>
+                        <a href="https://www.facebook.com/CosmoMobileMedia" target='_blank'><Instagram /></a>
+                        <a href="https://www.instagram.com/cosmomobilemedia/" target='_blank'><Facebook /></a>
                     </div>
                 </article>
             </section>

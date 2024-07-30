@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
-import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import ShootingStars from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
@@ -35,46 +34,47 @@ function Contact() {
 
     return (
         <section className="w-full px-4 bg-black py-12 relative">
-            <h2 className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-4xl tracking-tight text-transparent max-w-2xl mx-auto md:text-5xl lg:text-7xl lg:max-w-3xl">Contact Us</h2>
+            <h2 className="mb-4 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-5xl lg:text-7xl md:mb-4 mx-auto">Drop Us a Line</h2>
+            <p className="text-center my-6 max-w-5xl mx-auto md:text-lg lg:text-xl">Got a question? We&apos;ve got answers. Your questions and feedback matter to us.</p>
             <form
-                className="max-w-xl mx-auto p-6 my-12 flex flex-col justify-center items-center bg-[#2c2c2c] relative z-30 rounded-lg opacity-70"
+                className="max-w-xl mx-auto p-6 my-0 flex flex-col justify-center items-center bg-transparent relative z-30 rounded-lg"
                 onSubmit={handleSubmit(onSubmit)}
             >
-                <div className="w-full mt-[8px]">
-                    <label className="text-[#FFF] text-lg" htmlFor="name">Name</label>
+                <div className="mb-[16px] w-full py-0 px-[8px] text-white">
+                    <label className="block font-bold mb-[0.5rem]" htmlFor="name">Name</label>
                     <input
                         type="text"
-                        className={`mt-1 mx-0 p-[8px] w-full bg-transparent border border-[#FFF] rounded-md text-lg text-center lg:text-left placeholder:text-[#FFF] outline-none focus:outline-none`}
+                        className={`border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2`}
                         {...register("name", {
                             required: "Name is required",
                         })}
                     />
                     {errors.name && (
                         <p className="text-red-600 text-[1rem] font-bold">
-                            {errors.name.message}
+                            {errors.name.message as string}
                         </p>
                     )}
                 </div>
-                <div className="w-full mt-[8px]">
-                    <label className="text-[#FFF] text-lg" htmlFor="phone">Phone</label>
+                <div className="mb-[16px] w-full py-0 px-[8px] text-white">
+                    <label className="block font-bold mb-[0.5rem]" htmlFor="phone">Phone</label>
                     <input
                         type="text"
-                        className={`my-[8px] mx-0 p-[8px] w-full bg-transparent border border-[#FFF] rounded-md text-lg text-center lg:text-left placeholder:text-[#FFF] outline-none focus:outlite-none`}
+                        className={`border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2`}
                         {...register("phone", {
                             required: "Phone is required",
                         })}
                     />
                     {errors.phone && (
                         <p className="text-red-600 text-[1rem] font-bold">
-                            {errors.phone.message}
+                            {errors.phone.message as string}
                         </p>
                     )}
                 </div>
-                <div className="w-full mt-[8px]">
-                    <label className="text-[#FFF] text-lg" htmlFor="email">Email</label>
+                <div className="mb-[16px] w-full py-0 px-[8px] text-white">
+                    <label className="block font-bold mb-[0.5rem]" htmlFor="email">Email</label>
                     <input
                         type="text"
-                        className={`my-[8px] mx-0 p-[8px] w-full bg-transparent border border-[#FFF] rounded-md text-lg text-center lg:text-left placeholder:text-[#FFF] outline-none focus:outlite-none`}
+                        className={`border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2`}
                         {...register("email", {
                             required: "Email is required",
                             pattern: {
@@ -85,25 +85,25 @@ function Contact() {
                     />
                     {errors.email && (
                         <p className="text-red-600 text-[1rem] font-bold">
-                            {errors.email.message}
+                            {errors.email.message as string}
                         </p>
                     )}
                 </div>
-                <div className="w-full mt-[8px]">
-                    <label className="text-[#FFF] text-lg" htmlFor="msg">Message</label>
+                <div className="mb-[16px] w-full py-0 px-[8px] text-white">
+                    <label className="block font-bold mb-[0.5rem]" htmlFor="msg">Message</label>
                     <textarea
                         {...register("msg", {
                             required: "This field is required",
                         })}
-                        className={`my-[8px] mx-0 p-[8px] w-full bg-transparent border border-[#FFF] rounded-md text-lg text-center lg:text-left placeholder:text-[#FFF] outline-none focus:outlite-none`}
+                        className={`border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2`}
                     />
                     {errors.msg && (
                         <p className="text-red-600 text-[1rem] font-bold">
-                            {errors.msg.message}
+                            {errors.msg.message as string}
                         </p>
                     )}
                 </div>
-                <button
+                {/* <button
                     type="submit"
                     className="bg-transparent border border-white rounded-[50px] text-[#FFF] px-10 py-2 flex justify-center items-center mt-4 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
@@ -115,15 +115,30 @@ function Contact() {
                     ) : (
                         "Send"
                     )}
-                </button>
+                </button> */}
+                <div className="flex flex-col sm:flex-row items-center gap-4 mt-6 mx-auto">
+                    <div className="group relative">
+                        <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-cyan-500 opacity-75 blur transition duration-500 group-hover:opacity-100"></div>
+                        <button className="relative rounded-lg bg-black px-7 py-4 text-white">
+                            {isSubmitting ? (
+                                <div className="loadership_RVSBA">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            ) : (
+                                "Send"
+                            )}
+                        </button>
+                    </div>
+                </div>
             </form>
-            <footer className="max-w-xl mx-auto p-6 my-12 flex flex-col justify-center items-center  relative z-30 rounded-lg">
+            <footer className="max-w-xl mx-auto p-6 my-0 flex flex-col justify-center items-center  relative z-30 rounded-lg">
                 <a className='flex gap-2 text-sm items-center mb-1' href=""><Phone className='w-4 h-4' />+1 (281) 401-9303</a>
                 <a className='flex gap-2 text-sm items-center mb-1' href="mailto:contact@cosmomobilemedia.com"><Mail className='w-4 h-4' />contact@cosmomobilemedia.com</a>
                 <h2 className="text-[#FFF] text-xl font-bold mt-4">Follow Us</h2>
                 <div className='flex flex-row gap-2'>
-                    <a href="https://www.facebook.com/CosmoMobileMedia"><Instagram /></a>
-                    <a href="https://www.instagram.com/cosmomobilemedia/"><Facebook /></a>
+                    <a href="https://www.facebook.com/CosmoMobileMedia" target="_blank"><Instagram /></a>
+                    <a href="https://www.instagram.com/cosmomobilemedia/" target="_blank"><Facebook /></a>
                 </div>
             </footer>
             <Toaster />

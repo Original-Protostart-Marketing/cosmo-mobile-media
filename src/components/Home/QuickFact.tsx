@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import QuickFactImg from '../../../public/QuickFact.jpeg'
+import QuickFactImg from '../../../public/QuickFact.png'
 
 const QuickFact = () => {
     return (

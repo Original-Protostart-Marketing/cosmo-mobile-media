@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Map from '../../../public/Map.png'
+import Link from 'next/link'
 
 const Cities = () => {
     return (
@@ -16,7 +17,9 @@ const Cities = () => {
                     <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
                         <div className="group relative">
                             <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-cyan-500 opacity-75 blur transition duration-500 group-hover:opacity-100"></div>
-                            <button className="relative rounded-lg bg-black px-7 py-4 text-white">Contact us</button>
+                            <Link href="/contact">
+                                <button className="relative rounded-lg bg-black px-7 py-4 text-white">Contact us</button>
+                            </Link>
                         </div>
                     </div>
                 </section>
