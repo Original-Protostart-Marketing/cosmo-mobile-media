@@ -20,11 +20,10 @@ function Contact() {
         try {
             setIsSubmitting(true);
             await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/contact`, data);
-            setIsSubmitting(false);
             toast.success("Request sent successfully!");
             reset();
-        } catch {
-            console.error("Error");
+        } catch (error) {
+            console.error(error);
             toast.error("Error while sending the request");
         } finally {
             setIsSubmitting(false);
@@ -106,19 +105,6 @@ function Contact() {
                         </p>
                     )}
                 </div>
-                {/* <button
-                    type="submit"
-                    className="bg-transparent border border-white rounded-[50px] text-[#FFF] px-10 py-2 flex justify-center items-center mt-4 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                    {isSubmitting ? (
-                        <div className="loadership_RVSBA">
-                            <div></div>
-                            <div></div>
-                        </div>
-                    ) : (
-                        "Send"
-                    )}
-                </button> */}
                 <div className="flex flex-col sm:flex-row items-center gap-4 mt-6 mx-auto">
                     <div className="group relative">
                         <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-cyan-500 opacity-75 blur transition duration-500 group-hover:opacity-100"></div>

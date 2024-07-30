@@ -5,6 +5,7 @@ import axios from "axios";
 import FileUploader from "@/components/ui/file-uploader";
 import { StarsBackground } from "@/components/ui/stars-background";
 import ShootingStars from "@/components/ui/shooting-stars";
+import toast, { Toaster } from "react-hot-toast";
 
 const Careers = ({ complete }: any) => {
     const {
@@ -12,6 +13,7 @@ const Careers = ({ complete }: any) => {
         watch,
         control,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm();
 
@@ -29,10 +31,13 @@ const Careers = ({ complete }: any) => {
                     },
                 }
             );
+            toast.success("Request sent successfully!");
+            reset();
+        } catch (error) {
+            console.error(error);
+            toast.error("Error while sending the request");
+        } finally {
             setIsSubmitting(false);
-            complete(true);
-        } catch {
-            console.error("Error");
         }
     };
 
@@ -348,6 +353,7 @@ const Careers = ({ complete }: any) => {
                     </div>
                 </div>
             </form>
+            <Toaster />
             <ShootingStars />
             <StarsBackground />
         </section>
