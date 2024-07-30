@@ -31,13 +31,12 @@ const Navbar = () => {
                 <Link href='/'>
                     <Image src={Logo} alt="Logo" width={0} height={0} className='w-[120px]' />
                 </Link>
-                <nav className="flex gap-[20px] items-center xl:text-[18px] xl:gap-[15px] text-white">
+                <nav className="flex gap-[30px] items-center xl:text-[18px] xl:gap-[25px] text-white">
                     {/* <ToggleButton /> */}
                     <Link className="hidden md:flex" href='/'>Home</Link>
-                    <Link className="hidden md:flex" href='/'>About</Link>
-                    <Link className="hidden md:flex" href='/'>Services</Link>
-                    <Link className="hidden md:flex" href='/'>Contact</Link>
-                    <Link className="hidden md:flex" href='/'>Careers</Link>
+                    <Link className="hidden md:flex" href='/mobile-advertising'>Mobile Advertising</Link>
+                    <Link className="hidden md:flex" href='/contact'>Contact</Link>
+                    <Link className="hidden md:flex" href='/careers'>Careers</Link>
                     <AuthLinks />
                 </nav>
             </section>

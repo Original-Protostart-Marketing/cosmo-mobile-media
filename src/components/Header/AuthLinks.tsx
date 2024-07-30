@@ -11,14 +11,14 @@ const AuthLinks = () => {
     const [open, setOpen] = useState<boolean>(false);
     return (
         <>
-            {status !== "authenticated" ? (
+            {/* {status !== "authenticated" ? (
                 <Link className="hidden md:block" href={'/login'}>Login</Link>
             ) : (
                 <>
                     <Link className="hidden md:block" href={'/'}>Dashboard</Link>
                     <span className="cursor-pointer hidden md:block">Logout</span>
                 </>
-            )}
+            )} */}
             <div className="w-[20px] h-[16px] flex-col justify-between cursor-pointer flex md:hidden" onClick={() => setOpen(!open)}>
                 <div className="w-[100%] h-[2px] bg-foreground"></div>
                 <div className="w-[100%] h-[2px] bg-foreground"></div>
@@ -39,35 +39,35 @@ const AuthLinks = () => {
                         <div className="w-[90%] mx-auto h-[calc(100vh-70px)]">
                             <div className="w-full h-full bg-softBg rounded-xl flex flex-col justify-start items-center mt-8  text-[20px] font-semibold gap-[20px]">
                                 <Link
+                                    onClick={() => setOpen(false)}
                                     href={'/'}
                                     className="w-max flex items-center gap-[15px] mt-[20px]">
                                     Home
                                 </Link>
                                 <Link
-                                    href={'/about'}
+                                    onClick={() => setOpen(false)}
+                                    href={'/mobile-advertising'}
                                     className="w-max flex items-center gap-[15px]">
-                                    About
+                                    Mobile Advertising
                                 </Link>
                                 <Link
-                                    href={'/services'}
-                                    className="w-max flex items-center gap-[15px]">
-                                    Services
-                                </Link>
-                                <Link
+                                    onClick={() => setOpen(false)}
                                     href={'/contact'}
                                     className="w-max flex items-center gap-[15px]">
                                     Contact
                                 </Link>
                                 <Link
+                                    onClick={() => setOpen(false)}
                                     href={'/careers'}
                                     className="w-max flex items-center gap-[15px]">
                                     Careers
                                 </Link>
-                                {
+                                {/* {
                                     status === "authenticated" ? (
                                         <>
                                             <Link
-                                                href={'/'}
+                                                onClick={() => setOpen(false)}
+                                                href={'/dashboard'}
                                                 className="w-max flex items-center gap-[15px]">
                                                 Dashboard
                                             </Link>
@@ -80,7 +80,7 @@ const AuthLinks = () => {
                                             Login
                                         </button>
                                     )
-                                }
+                                } */}
                             </div>
                         </div>
                     </div>

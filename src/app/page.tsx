@@ -15,10 +15,10 @@ export default function Home() {
       <QuickFact />
       <Services />
       <Contact />
-      {/* Preview your campaign */}
       <Cities />
       <Testimonials />
       <Slogans />
+      {/* Preview your campaign */}
       {/* Mini Gallery */}
     </>
   );
