@@ -16,11 +16,10 @@ function Contact() {
     } = useForm();
 
     const [isSubmitting, setIsSubmitting] = useState(false);
-
     const onSubmit = async (data: any) => {
         try {
             setIsSubmitting(true);
-            await axios.post(`${process.env.REACT_APP_API_URL}/contact`, data);
+            await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/contact`, data);
             setIsSubmitting(false);
             toast.success("Request sent successfully!");
             reset();
@@ -44,6 +43,7 @@ function Contact() {
                     <label className="block font-bold mb-[0.5rem]" htmlFor="name">Name</label>
                     <input
                         type="text"
+                        placeholder="John Doe"
                         className={`border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2`}
                         {...register("name", {
                             required: "Name is required",
@@ -59,6 +59,7 @@ function Contact() {
                     <label className="block font-bold mb-[0.5rem]" htmlFor="phone">Phone</label>
                     <input
                         type="text"
+                        placeholder="123-456-7890"
                         className={`border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2`}
                         {...register("phone", {
                             required: "Phone is required",
@@ -74,6 +75,7 @@ function Contact() {
                     <label className="block font-bold mb-[0.5rem]" htmlFor="email">Email</label>
                     <input
                         type="text"
+                        placeholder="john.doe@cosmomobilemedia.com"
                         className={`border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2`}
                         {...register("email", {
                             required: "Email is required",
@@ -95,6 +97,7 @@ function Contact() {
                         {...register("msg", {
                             required: "This field is required",
                         })}
+                        placeholder="Hello, I am interested in..."
                         className={`border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2`}
                     />
                     {errors.msg && (

@@ -11,8 +11,6 @@ const FileUploader = ({ onFileSelect, error }: { onFileSelect: (file: File) => v
             setSelectedFile(event.target.files[0]);
         }
     };
-    console.log(error);
-
     const onChooseFile = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (inputRef.current) {

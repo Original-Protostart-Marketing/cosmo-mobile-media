@@ -21,7 +21,7 @@ const Careers = ({ complete }: any) => {
         try {
             setIsSubmitting(true);
             await axios.post(
-                `${process.env.REACT_APP_API_URL}/postulants`,
+                `${process.env.NEXT_PUBLIC_API_URL}/postulants`,
                 { ...data, job: "driver" },
                 {
                     headers: {
@@ -283,7 +283,7 @@ const Careers = ({ complete }: any) => {
                         </label>
                         <input
                             id="amountAccidents"
-                            className="border border-[#e4e5e6] bg-[#f2f4f6] rounded-[0.5rem] outline-none w-full"
+                            className="border border-[#2e2a3a] bg-[#3b364c] rounded-[0.5rem] outline-none w-full px-2 py-2"
                             {...register("amountAccidents", {
                                 validate: validateAmountAccidents,
                             })}
