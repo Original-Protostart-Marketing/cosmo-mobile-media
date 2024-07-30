@@ -6,26 +6,23 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import TestimonialCard from '../ui/testimonial-card';
-import Testimonial from "../../../public/Testimonial.webp"
-import Testimonial2 from "../../../public/Testimonial2.webp"
-import Testimonial3 from "../../../public/Testimonial3.webp"
 
 const Testimonials = () => {
     const testimonials = [
         {
             name: "Sarah L.",
             description: "CosmoMobileMedia transformed our advertising strategy with their eye-catching mobile billboards. Their LED trucks delivered our message effectively and captured attention everywhere. Highly recommend!",
-            image: Testimonial
+            image: "/Testimonial.webp"
         },
         {
             name: "James P.",
             description: "Thanks to CosmoMobileMedia's vibrant LED trucks, our campaign reached a much broader audience. Their professional service and high-quality displays made a significant impact. Fantastic service!",
-            image: Testimonial3
+            image: "/Testimonial3.webp"
         },
         {
             name: "Emily R.",
             description: "CosmoMobileMedia's mobile ads exceeded our expectations. The vibrant screens ensured our message was seen by thousands, and their commitment to quality was evident. Our brand truly shined everywhere!",
-            image: Testimonial2
+            image: "/Testimonial2.webp"
         }
     ]
     return (
