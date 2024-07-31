@@ -122,12 +122,12 @@ function Contact() {
                 </div>
             </form>
             <footer className="max-w-xl mx-auto p-6 my-0 flex flex-col justify-center items-center  relative z-30 rounded-lg">
-                <a className='flex gap-2 text-sm items-center mb-1' href=""><Phone className='w-4 h-4' />+1 (281) 401-9303</a>
+                <a className='flex gap-2 text-sm items-center mb-1' href="tel:+12814019303"><Phone className='w-4 h-4' />+1 (281) 401-9303</a>
                 <a className='flex gap-2 text-sm items-center mb-1' href="mailto:contact@cosmomobilemedia.com"><Mail className='w-4 h-4' />contact@cosmomobilemedia.com</a>
                 <h2 className="text-[#FFF] text-xl font-bold mt-4">Follow Us</h2>
                 <div className='flex flex-row gap-2'>
-                    <a href="https://www.facebook.com/CosmoMobileMedia" target="_blank"><Instagram /></a>
-                    <a href="https://www.instagram.com/cosmomobilemedia/" target="_blank"><Facebook /></a>
+                    <a href="https://www.instagram.com/cosmomobilemedia/" target="_blank"><Instagram /></a>
+                    <a href="https://www.facebook.com/CosmoMobileMedia" target="_blank"><Facebook /></a>
                 </div>
             </footer>
             <Toaster />
