@@ -62,6 +62,12 @@ const AuthLinks = () => {
                                     className="w-max flex items-center gap-[15px]">
                                     Careers
                                 </Link>
+                                <Link
+                                    onClick={() => setOpen(false)}
+                                    href={'/sales'}
+                                    className="w-max flex items-center gap-[15px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-moveText">
+                                    TRUCKS ON SALE!
+                                </Link>
                                 {/* {
                                     status === "authenticated" ? (
                                         <>

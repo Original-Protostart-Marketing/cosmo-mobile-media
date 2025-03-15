@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <section className="flex flex-col items-center justify-center py-8 pb-20">
+    <section className="flex flex-col items-center justify-center py-8 pb-20 px-5">
       <h1 className="flex bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-center text-3xl lg:text-5xl font-extrabold">
         Take a look at our trucks!
       </h1>
@@ -39,7 +39,7 @@ export default function Page() {
           <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-cyan-500 opacity-75 blur transition duration-500 group-hover:opacity-100" />
           <a
             className="flex relative bg-black gap-5 items-center mb-1 justify-center rounded-sm p-3 text-lg lg:text-3xl lg:p-6"
-            href="mailto:contact@cosmomobilemedia.com"
+            href="mailto:lexi@cosmomobilemedia.com"
           >
             <Mail className="size-5 lg:size-9" />
             lexi@cosmomobilemedia.com
