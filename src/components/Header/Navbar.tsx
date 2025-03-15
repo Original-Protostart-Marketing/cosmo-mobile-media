@@ -49,7 +49,7 @@ const Navbar = () => {
             className="hidden md:flex bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-center text-xl  animate-moveText "
             href="/sales"
           >
-            TRUCKS ON SALE!
+            TRUCKS FOR SALE!
           </Link>
           <AuthLinks />
         </nav>
