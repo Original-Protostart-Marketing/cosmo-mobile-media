@@ -1,11 +1,17 @@
+'use client'
 import Image from "next/image";
 import ISUZU_2023 from "../../../public/ISUZU_2023.png";
 import ISUZU_2024 from "../../../public/ISUZU_2024.png";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Page() {
+  useEffect(() => {
+    sessionStorage.setItem("truckModalClosed", "true");
+  }, []);
+
   return (
     <section className="flex flex-col items-center justify-center py-8 pb-20 px-5">
       <h1 className="flex bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-center text-3xl lg:text-5xl font-extrabold">
