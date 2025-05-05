@@ -62,31 +62,6 @@ const AuthLinks = () => {
                                     className="w-max flex items-center gap-[15px]">
                                     Careers
                                 </Link>
-                                <Link
-                                    onClick={() => setOpen(false)}
-                                    href={'/sales'}
-                                    className="w-max flex items-center gap-[15px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-moveText">
-                                    TRUCKS FOR SALE!
-                                </Link>
-                                {/* {
-                                    status === "authenticated" ? (
-                                        <>
-                                            <Link
-                                                onClick={() => setOpen(false)}
-                                                href={'/dashboard'}
-                                                className="w-max flex items-center gap-[15px]">
-                                                Dashboard
-                                            </Link>
-                                            <button className="py-[16px] px-[20px] border-none rounded-[5px] w-[90%] bg-foreground text-background font-bold flex justify-center items-center gap-[15px]">
-                                                Logout
-                                            </button>
-                                        </>
-                                    ) : (
-                                        <button className="py-[16px] px-[20px] border-none rounded-[5px] w-[90%] bg-foreground text-background font-bold flex justify-center items-center gap-[15px]">
-                                            Login
-                                        </button>
-                                    )
-                                } */}
                             </div>
                         </div>
                     </div>

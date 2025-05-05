@@ -19,17 +19,17 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-            window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [prevScrollPos]);
 
   return (
-        <header className={`fixed px-4 top-0 left-0 h-[70px] w-screen z-50 transition duration-300 ease-in-out ${visible ? 'translate-y-0 bg-slate-950' : '-translate-y-full'}`}>
+    <header className={`fixed px-4 top-0 left-0 h-[70px] w-screen z-50 transition duration-300 ease-in-out ${visible ? 'translate-y-0 bg-slate-950' : '-translate-y-full'}`}>
       <section className="w-[100%] max-w-7xl mx-auto flex items-center justify-between h-full z-50">
-                <Link href='/'>
-                    <Image src={Logo} alt="Logo" width={0} height={0} className='w-[120px]' />
+        <Link href='/'>
+          <Image src={Logo} alt="Logo" width={0} height={0} className='w-[120px]' />
         </Link>
         <nav className="flex gap-[30px] items-center xl:text-[18px] xl:gap-[25px] text-white">
           {/* <ToggleButton /> */}
@@ -44,12 +44,6 @@ const Navbar = () => {
           </Link>
           <Link className="hidden md:flex" href="/careers">
             Careers
-          </Link>
-          <Link
-            className="hidden md:flex bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-center text-xl  animate-moveText "
-            href="/sales"
-          >
-            TRUCKS FOR SALE!
           </Link>
           <AuthLinks />
         </nav>
